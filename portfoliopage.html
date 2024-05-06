@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Contact_us.css">
+    <link rel="stylesheet" href="po">
+</head>
+
+
+    <style>
+
+#logo_section{
+    padding-top: 84px;
+}
+.logo_design{
+    width: 100vw;
+   height: 100vh;
+    
+    padding-left: 197px;
+    gap: 0px;
+    border-radius: 6px 0px 0px 0px;
+    opacity: 0px;
+}
+
+.logo_design h2{
+    font-family: Poppins;
+        font-size: 64px;
+        font-weight: 800;
+        line-height: 74.66px;
+        text-align: left;
+
+        font-size: 72px;
+  background: -webkit-linear-gradient(-84.03deg, #00ACFF -26.16%, #0056BF 104.95%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+        ;
+}
+.images{
+
+    display: flex;
+    justify-content: center;
+margin-right: 200px;
+  max-width: 100vw;
+height: 80vh;
+top: 801px;
+left: 200px;
+gap: 0px;
+border-radius: 6px ;
+opacity: 0px;
+
+}
+.images h2{
+    font-family: Poppins;
+font-size: 26px;
+font-weight: 600;
+line-height: 39px;
+text-align: left;
+
+color:  rgba(45, 45, 45, 1);
+
+
+}
+.images p{
+    font-family: Poppins;
+font-size: 14px;
+font-weight: 400;
+line-height: 16.33px;
+text-align: left;
+color:  rgba(103, 103, 103, 1);
+
+}
+
+.portfolio {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.portfolio-item {
+  margin: 10px;
+}
+
+.thumbnail {
+  width: 322px;
+  height: 277px;
+  cursor: pointer;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.7);
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+.close {
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: #ccc;
+  text-decoration: none;
+  cursor: pointer;
+}
+</style>
+
+<!-- Navbaar -->
+
+<body>
+    <header >
+        <nav class="menu">
+            <div class="nav">
+                <img class="logo" src="logo.png" alt="">
+                <div class="child">
+                    <ul>
+                        <li>
+                            <a class="a" href="">Home</a>
+                            <a class="a" href="">About</a>
+
+                            <div style="text-decoration: none;" class="dropdown">
+
+                                <a id="a" href="">Services</a>
+                                <div class="dropdown-content">
+                                    <a id="a" href="">Graphic Design</a>
+                                    <a id="a" href="">Social media marketing</a>
+                                    <a id="a" href="">Content writing</a>
+                                    <a id="a" href="">Application Development</a>
+                                    <a id="a" href="">Website Development</a>
+                                    <a id="a" href="">SEO</a>
+                                    <a id="a" href="">PPC Management</a>
+                                </div>
+                            </div>
+
+                            <a id="a" href="">Portfolio</a>
+                            <button class="">Contact us</button>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Hero Section -->
+    <img src="./Images/Mask group.png "  style=" top: 0; width: 98.6vw; height: 60vh; opacity: 85%; z-index: -1;">
+   <section class="main">
+    <h2>PORTFOLIO</h2>
+
+   </section>
+ 
+
+    <!-- portfolio section -->
+    <section id="logo_section" class="logo_design">
+        <h2>LOGO DESIGN</h2>
+       
+<div class="images" >
+<div class="logo1" >
+    <div class="portfolio-item">
+        <img src="./Images/logo1.jpg" alt="Portfolio Item 1" class="thumbnail" data-image="./Images/l1.jpg">
+        <h2>Project Name</h2>
+        <p>Maecenas condimentum ligulaet 
+            tempus ornare, Maecenas 
+            condimentum.</p>
+    </div>
+   
+    
+    
+</div>
+
+    <div class="portfolio-item">
+        <img src="./Images/logo2.jpg" alt="Portfolio Item 1" class="thumbnail" data-image="./Images/l2.jpg">
+        <h2>Project Name</h2>
+        <p>Maecenas condimentum ligulaet 
+            tempus ornare, Maecenas 
+            condimentum.</p>
+
+</div>
+
+    <div class="portfolio-item">
+        <img src="./Images/logo3.png" alt="Portfolio Item 1" class="thumbnail" data-image="./Images/l3.jpg">
+        <h2>Project Name</h2>
+        <p>Maecenas condimentum ligulaet 
+            tempus ornare, Maecenas 
+            condimentum.</p>
+    </div>
+
+    <div class="modal" id="modal">
+        <span class="close">&times;</span>
+        <img src="" alt="Full Image" class="modal-content" id="fullImage">
+      </div>
+    </section>
+    
+<section class="logo_design">
+<h2>Website Design + Development</h2>
+    <div class="images" >
+        <div class="logo1" >
+            <div class="portfolio-item">
+                <img src="./Images/web1.png" alt="Portfolio Item 1" class="thumbnail" data-image="./Images/web.1jpg">
+                <h2>Project Name</h2>
+                <p>Maecenas condimentum ligulaet 
+                    tempus ornare, Maecenas 
+                    condimentum.</p>
+            </div>
+           
+            
+            
+        </div>
+        
+            <div class="portfolio-item">
+                <img src="./Images/web2.png" alt="Portfolio Item 1" class="thumbnail" data-image="./Images/web.2.jpg">
+                <h2>Project Name</h2>
+                <p>Maecenas condimentum ligulaet 
+                    tempus ornare, Maecenas 
+                    condimentum.</p>
+        
+        </div>
+        
+            <div class="portfolio-item">
+                <img src="./Images/web3.png" alt="Portfolio Item 1" class="thumbnail" data-image="./Images/web.3.jpg">
+                <h2>Project Name</h2>
+                <p>Maecenas condimentum ligulaet 
+                    tempus ornare, Maecenas 
+                    condimentum.</p>
+            </div>
+        
+            <div class="modal" id="modal">
+                <span class="close">&times;</span>
+                <img src="" alt="Full Image" class="modal-content" id="fullImage">
+              </div>
+</section>
+
+<!-- section 3 -->
+<section class="logo_design">
+    <h2>Print media</h2>
+        <div class="images" >
+            <div class="logo1" >
+                <div class="portfolio-item">
+                    <img src="./Images/print.1.jpg" alt="Portfolio Item 1" class="thumbnail" data-image="./Images/print.1.jpg">
+                    <h2>Project Name</h2>
+                    <p>Maecenas condimentum ligulaet 
+                        tempus ornare, Maecenas 
+                        condimentum.</p>
+                </div>
+               
+                
+                
+            </div>
+            
+                <div class="portfolio-item">
+                    <img src="./Images/print2.png" alt="Portfolio Item 1" class="thumbnail" data-image="./Images/print.2.jpg">
+                    <h2>Project Name</h2>
+                    <p>Maecenas condimentum ligulaet 
+                        tempus ornare, Maecenas 
+                        condimentum.</p>
+            
+            </div>
+            
+                <div class="portfolio-item">
+                    <img src="./Images/print3.png" alt="Portfolio Item 1" class="thumbnail" data-image="./Images/print.3.jpg">
+                    <h2>Project Name</h2>
+                    <p>Maecenas condimentum ligulaet 
+                        tempus ornare, Maecenas 
+                        condimentum.</p>
+                </div>
+            
+                <div class="modal" id="modal">
+                    <span class="close">&times;</span>
+                    <img src="" alt="Full Image" class="modal-content" id="fullImage">
+                  </div>
+    </section>
+<!-- Section 4 -->
+    <section class="logo_design">
+        <h2>Social media Posts</h2>
+            <div class="images" >
+                <div class="logo1" >
+                    <div class="portfolio-item">
+                        <img src="./Images/social1.png" alt="Portfolio Item 1" class="thumbnail" data-image="./Images/social.1.jpg">
+                        <h2>Project Name</h2>
+                        <p>Maecenas condimentum ligulaet 
+                            tempus ornare, Maecenas 
+                            condimentum.</p>
+                    </div>
+                   
+                    
+                    
+                </div>
+                
+                    <div class="portfolio-item">
+                        <img src="./Images/social2.png" alt="Portfolio Item 1" class="thumbnail" data-image="./Images/social.2.jpg">
+                        <h2>Project Name</h2>
+                        <p>Maecenas condimentum ligulaet 
+                            tempus ornare, Maecenas 
+                            condimentum.</p>
+                
+                </div>
+                
+                    <div class="portfolio-item">
+                        <img src="./Images/social3.png" alt="Portfolio Item 1" class="thumbnail" data-image="./Images/social.3.jpg">
+                        <h2>Project Name</h2>
+                        <p>Maecenas condimentum ligulaet 
+                            tempus ornare, Maecenas 
+                            condimentum.</p>
+                    </div>
+                
+                    <div class="modal" id="modal">
+                        <span class="close">&times;</span>
+                        <img src="" alt="Full Image" class="modal-content" id="fullImage">
+                      </div>
+        </section>
+
+        <!-- section5 -->
+        <section class="logo_design">
+            <h2>Application development</h2>
+                <div class="images" >
+                    <div class="logo1" >
+                        <div class="portfolio-item">
+                            <img src="./Images/app1.png" alt="Portfolio Item 1" class="thumbnail" data-image="./Images/app.1.jpg">
+                            <h2>Project Name</h2>
+                            <p>Maecenas condimentum ligulaet 
+                                tempus ornare, Maecenas 
+                                condimentum.</p>
+                        </div>
+                       
+                        
+                        
+                    </div>
+                    
+                        <div class="portfolio-item">
+                            <img src="./Images/app2.png" alt="Portfolio Item 1" class="thumbnail" data-image="./Images/app.2.jpg">
+                            <h2>Project Name</h2>
+                            <p>Maecenas condimentum ligulaet 
+                                tempus ornare, Maecenas 
+                                condimentum.</p>
+                    
+                    </div>
+                    
+                        <div class="portfolio-item">
+                            <img src="./Images/app3.png" alt="Portfolio Item 1" class="thumbnail" data-image="./Images/app.3.jpg">
+                            <h2>Project Name</h2>
+                            <p>Maecenas condimentum ligulaet 
+                                tempus ornare, Maecenas 
+                                condimentum.</p>
+                        </div>
+                    
+                        <div class="modal" id="modal">
+                            <span class="close">&times;</span>
+                            <img src="" alt="Full Image" class="modal-content" id="fullImage">
+                          </div>
+            </section>
+</body>
+
+</html>
+
+
+<footer style="margin-top: 5px;">
+    <div class="footer-container">
+        <div class="footer-section">
+            <div class="logo-description">
+                <img class="logo" src="logo.png" alt="">
+                <p>Aenean gravida molestie ultrices Mauris libero neque, gravida in gravida sed, consectetur id tellus.
+                </p>
+            </div>
+            <div class="footer-section" style="  margin-top: 30px; font-family: Poppins;
+font-size: 32px;
+font-weight: 600;
+line-height: 48px;
+text-align: left;
+">
+                <h3>Social Links</h3>
+            </div>
+            <div class="social-icons">
+                <i><img src="./Images/facebook (1) 1.png" alt=""></i>
+                <i><img src="./Images/instagram 1.png" alt=""></i>
+                <i><img src="./Images/linkedin 1.png" alt=""></i>
+
+            </div>
+        </div>
+        <div style="margin-top: 30px; max-width: 50px;" class="footer-section">
+
+        </div>
+        <div style="margin-top: 30px; " class="footer-section">
+            <h3>Head Office</h3>
+            <ul>
+                <li>5900, Balcones DR STE 100
+                    Austin, Texas</li>
+                <li id="email_transition"><a href="#">Info@cloudskillconnect.com</a></li>
+                <li>+1 512-380-1090</li>
+            </ul>
+        </div>
+        <div style="margin-top: 30px; max-width: 50px ; " class="footer-section">
+
+        </div>
+        <div style="margin-top: 30px; max-width: 150px; " class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div style="margin-top: 30px; max-width: 50px; " class="footer-section">
+
+        </div>
+        <div style="margin-top: 30px;" class="footer-section">
+            <h3>Our Services</h3>
+            <ul>
+                <li><a href="#"> Social media marketing </a></li>
+                <li><a href="#">Graphic designing </a></li>
+                <li><a href="#">Web designing </a></li>
+                <li><a href="#">Web development</a></li>
+                <li><a href="#">Content writing </a></li>
+                <li><a href="#">SEO</a></li>
+                <li><a href="#">Application development</a></li>
+                <li><a href="#">PPC management</a></li>
+            </ul>
+        </div>
+    </div>
+    <div style="height: 2px; background-color:  rgba(95, 95, 95, 1); margin: 0px 150px; margin-top: 40px;"></div>
+    <div style="text-align: center; margin-top: 10px;">Copyright @2024 Cloudskill Connect All Rights Reserved</div>
+</footer>
+
+<script>
+    
+    document.addEventListener('DOMContentLoaded', function() {
+  const thumbnails = document.querySelectorAll('.thumbnail');
+  const modal = document.getElementById('modal');
+  const fullImage = document.getElementById('fullImage');
+
+  thumbnails.forEach(thumbnail => {
+    thumbnail.addEventListener('click', function() {
+      const fullImagePath = this.dataset.image;
+      fullImage.src = fullImagePath;
+      modal.style.display = 'block';
+    });
+  });
+
+  modal.addEventListener('click', function(event) {
+    if (event.target === modal || event.target.classList.contains('close')) {
+      modal.style.display = 'none';
+    }
+  });
+});
+    </script>
+</body>
+
+</html>
