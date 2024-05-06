@@ -305,7 +305,9 @@ text-align: left;
 
 /* About section styles */
 .About_main {
-    padding: 100px 50px; /* Adjust padding as needed */
+    padding: 100px 50px;
+    
+    /* Adjust padding as needed */
     background-color: #ffffff;
     color: #000000;
 }
@@ -343,7 +345,7 @@ text-align: left;
 
   width: 99.8w;
       height: 15.081vw;
-      margin-top: 150px;
+      margin-top: 10px;
       background-color: #ffffff;
       margin-left: 13.438vw;
       margin-right: 13.438vw;
@@ -385,8 +387,8 @@ text-align: left;
       justify-content: space-around;
       
   }
-  .cards3{
-    margin-left: 0px;
+  #cards2{
+    margin-left: 200px;
     margin-right: 200px;
   }
   .cards1 .card , .cards2 .card, .cards3 .card{
@@ -505,6 +507,62 @@ text-align: left;
 }
 #h3_div{
   width: 100px;
+}
+
+.faqs{
+display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 980px;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+.faqs_right{
+  width: 542px;
+height: 576px;
+gap: 0px;
+opacity: 0px;
+
+
+}
+.faqs_left{
+  margin-right: 100px;
+  
+}
+.accordion {
+  
+  background-color: transparent;
+  cursor: pointer;
+  color:  rgba(106, 106, 106, 1);
+
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+  width: Fixed (464px)px;
+  height: Fixed (50px)px;
+  padding: 10px;
+  gap: 31px;
+  border-radius: 6px;
+  border: 2px 0px 0px 0px;
+  opacity: 0px;
+  border: 2px solid rgba(182, 182, 182, 1)
+  
+}
+
+.active, .accordion:hover {
+  background-color: #ccc; 
+}
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+  color: rgba(0, 0, 0, 1);
+
+  
 }
 /* Responsive style  */
 
@@ -684,6 +742,9 @@ nav .navbar .links li .sub-menu li{
     .navbar ul {
         display: none;
     }
+    .sec-hero{
+      max-width: 100vh;
+    }
     .hero h2{
         text-align: left;
     }
@@ -792,31 +853,29 @@ text-align: center;
    align-items: center;
       
   }
-  .cards3{
-display: none;
 
-  }
-  
   .cards1 .card , .cards2 .card, .cards3 .card{
     margin-top: 40px;
   }
-  
+  #cards2{
+    width: 100%;
+    margin-left: 60px ;
+      }
   .card{
-      width: 221px;
+  width: 221px;
   height: 289.55px;
   gap: 0px;
   border-radius: 18.91px;
   background: rgba(240, 250, 255, 1);
-     text-align: center;
-     border: 1.18px solid rgba(40, 185, 255, 1);
-     box-shadow: 0px 4.73px 11.58px 0px rgba(0, 0, 0, 0.25);
+  text-align: center;
+    border: 1.18px solid rgba(40, 185, 255, 1);
+    box-shadow: 0px 4.73px 11.58px 0px rgba(0, 0, 0, 0.25);
     
-  
   }
   
   .card h3{
       
-      font-family: Poppins;
+  font-family: Poppins;
   font-size: 23.64px;
   font-weight: 600;
   line-height: 21.55px;
@@ -914,6 +973,66 @@ margin-right: 10px;
 #h3_div{
 width: 100px;
 }
+
+
+
+.faqs{
+  display: block;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3000.55px;
+  margin-left: 80px;
+  margin-right: 80px;
+}
+.faqs_right img{
+width: 314px;
+height: 576px;
+gap: 0px;
+opacity: 0px;
+}
+.faqs_left{
+
+  width: 100%;
+ 
+  
+}
+.accordion {
+  
+  background-color: transparent;
+  cursor: pointer;
+  color:  rgba(106, 106, 106, 1);
+
+  height: auto  ;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 14px;
+  transition: 0.4s;
+  width: Fixed (464px)px;
+  height: Fixed (50px)px;
+  padding: 10px;
+  gap: 31px;
+  border-radius: 6px;
+  border: 2px 0px 0px 0px;
+  opacity: 0px;
+  border: 2px solid rgba(182, 182, 182, 1);
+  width: 100%;
+  
+}
+
+.active, .accordion:hover {
+  background-color: #ccc; 
+}
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+  color: rgba(0, 0, 0, 1);
+
+  
+}
 }
 
 /* services */
@@ -959,7 +1078,7 @@ width: 100px;
   }
   .cards1,.cards2,.cards3{
    
-      margin-left: 40px;
+      margin-left: 65px;
   }
   .cards1 .card , .cards2 .card, .cards3 .card{
     margin-top: 40px;
@@ -1007,8 +1126,13 @@ width: 100px;
       color: white;
       box-shadow: 0px 2.4px 11.27px 0px rgba(0, 0, 0, 0.25);
   }
+
+  /* faqs */
+  
+
 @media (max-width:430px) {
   .hero, .sec-hero{
    max-width: 100%
+   
   }
 }
